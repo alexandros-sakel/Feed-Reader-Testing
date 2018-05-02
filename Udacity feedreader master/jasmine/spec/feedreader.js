@@ -92,10 +92,9 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, done);
         });
-        it('we are defining that the entry has more than 0 entries ', function() {
-            var entries = $('.entry').length;
+        it('we are defining that the initial element is there', function() {
             //expecting that there one entry at least
-            expect(entries).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
